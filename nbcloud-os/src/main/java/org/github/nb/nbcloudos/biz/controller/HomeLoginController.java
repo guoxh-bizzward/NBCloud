@@ -1,0 +1,15 @@
+package org.github.nb.nbcloudos.biz.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/home")
+public class HomeLoginController {
+
+    @PostMapping("/login")
+    public Object login(){
+        return "SUCCESS";
+    }
+}
