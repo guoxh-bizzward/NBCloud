@@ -100,7 +100,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.4.RELEASE</version>
                 <configuration>
-                    <mainClass>org.github.nb.nbcloudos.NbcloudOsApplication</mainClass>
+                    <mainClass>org.github.nb.nbcloudos.NbCloudOsApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
