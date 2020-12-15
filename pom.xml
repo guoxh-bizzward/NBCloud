@@ -20,6 +20,8 @@
     <modules>
         <module>pub-login</module>
         <module>pub-common</module>
+        <module>myplus-generator</module>
+        <module>stripe-pay</module>
     </modules>
 
     <dependencyManagement>
