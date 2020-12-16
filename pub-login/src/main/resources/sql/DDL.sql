@@ -36,7 +36,8 @@ create table sys_permission
     permission_name varchar(32) null comment '权限名'
 )
     comment '权限表';
-create table sys_role_permission_relation
+
+create table if not exists sys_role_permission_relation
 (
     id            int auto_increment comment '主键id'
         primary key,
@@ -45,7 +46,7 @@ create table sys_role_permission_relation
 )
  comment '角色-权限关联关系表';
 
-create table sys_user_role_relation
+create table if not exists sys_user_role_relation
 (
     id      int auto_increment comment '主键id'
         primary key,
@@ -53,7 +54,7 @@ create table sys_user_role_relation
     role_id int null comment '角色id'
 )
     comment '用户角色关联关系表';
-create table sys_request_path
+create table if not exists sys_request_path
 (
     id          int auto_increment comment '主键id'
         primary key,
@@ -61,7 +62,7 @@ create table sys_request_path
     description varchar(128) null comment '路径描述'
 )
     comment '请求路径';
-create table sys_request_path_permission_relation
+create table if not exists sys_request_path_permission_relation
 (
     id            int null comment '主键id',
     url_id        int null comment '请求路径id',

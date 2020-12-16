@@ -15,9 +15,9 @@ import java.util.Objects;
 
 public class UserDetailsServiceImpl implements UserDetailsService {
     @Autowired
-    private SysUserService sysUserService;
-    @Autowired
-    private SysPermissionService sysPermissionService;
+    private ISysUserService sysUserService;
+//    @Autowired
+//    private SysPermissionService sysPermissionService;
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         if(StringUtils.isEmpty(username)){
